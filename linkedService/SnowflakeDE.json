@@ -1,0 +1,21 @@
+{
+	"name": "SnowflakeDE",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SnowflakeV2",
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"accountIdentifier": "QVUSPXA-FF10776",
+			"user": "NISHITHA",
+			"database": "Food_Delivery",
+			"warehouse": "COMPUTE_WH",
+			"role": "ACCOUNTADMIN",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmMmU1MGM1ZC1lMWQxLTRlNmMtOWU5Mi1iYjNkNzRhZjc5NWIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-DE",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
