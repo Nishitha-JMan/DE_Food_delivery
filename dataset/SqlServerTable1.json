@@ -5,12 +5,20 @@
 			"referenceName": "SqlServerIR",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"file_name": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "dbo",
-			"table": "Country"
+			"schema": "",
+			"table": {
+				"value": "@dataset().file_name",
+				"type": "Expression"
+			}
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
